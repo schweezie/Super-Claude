@@ -88,30 +88,30 @@
 ---
 
 ## STEP 2: Master CLAUDE.md
-- [ ] 2.1 Write phase detection routing logic (keyword → phase mapping)
-- [ ] 2.2 Write knowledge loading rules (which files load per phase)
-- [ ] 2.3 Write gate enforcement rules (what must exist before each phase starts)
-- [ ] 2.4 Write state tracking rules (read/write `.omc/state/`)
-- [ ] 2.5 Write delegation rules (when to use subagent vs team vs direct)
-- [ ] 2.6 Write context management rules (compaction at 200k, `/clear` between phases)
-- [ ] 2.7 Write artifact path conventions
-- [ ] 2.8 Write model selection guidance (Opus for planning, Sonnet for code)
-- [ ] 2.9 Reference all commands, agents, skills in the routing table
-- [ ] 2.10 Add compaction recovery protocol (re-read AGENT_STATE.md + CHECKLIST.md)
-- [ ] 2.11 Test CLAUDE.md loads correctly in Claude Code
-- [ ] 2.12 **STEP 2 COMPLETE** — Update `AGENT_STATE.md`
+- [x] 2.1 Write phase detection routing logic (keyword → phase mapping)
+- [x] 2.2 Write knowledge loading rules (which files load per phase)
+- [x] 2.3 Write gate enforcement rules (what must exist before each phase starts)
+- [x] 2.4 Write state tracking rules (read/write `.omc/state/`)
+- [x] 2.5 Write delegation rules (when to use subagent vs team vs direct)
+- [x] 2.6 Write context management rules (compaction at 200k, `/clear` between phases)
+- [x] 2.7 Write artifact path conventions
+- [x] 2.8 Write model selection guidance (Opus for planning, Sonnet for code)
+- [x] 2.9 Reference all commands, agents, skills in the routing table
+- [x] 2.10 Add compaction recovery protocol (re-read AGENT_STATE.md + CHECKLIST.md)
+- [x] 2.11 Test CLAUDE.md loads correctly in Claude Code
+- [x] 2.12 **STEP 2 COMPLETE** — Update `AGENT_STATE.md`
 
 ---
 
 ## STEP 3: Pipeline Output Specs
-- [ ] 3.1 Write `pipeline/01-idea/output-spec.md` — Define what idea phase must produce
-- [ ] 3.2 Write `pipeline/02-plan/output-spec.md` — Define what plan phase must produce
-- [ ] 3.3 Write `pipeline/03-architect/output-spec.md` — Define what architect phase must produce
-- [ ] 3.4 Write `pipeline/04-build/output-spec.md` — Define what build phase must produce
-- [ ] 3.5 Write `pipeline/05-test/output-spec.md` — Define what test phase must produce
-- [ ] 3.6 Write `pipeline/06-ship/output-spec.md` — Define what ship phase must produce
-- [ ] 3.7 Cross-validate: each output-spec's outputs match next phase's expected inputs
-- [ ] 3.8 **STEP 3 COMPLETE** — Update `AGENT_STATE.md`
+- [x] 3.1 Write `pipeline/01-idea/output-spec.md` — Define what idea phase must produce
+- [x] 3.2 Write `pipeline/02-plan/output-spec.md` — Define what plan phase must produce
+- [x] 3.3 Write `pipeline/03-architect/output-spec.md` — Define what architect phase must produce
+- [x] 3.4 Write `pipeline/04-build/output-spec.md` — Define what build phase must produce
+- [x] 3.5 Write `pipeline/05-test/output-spec.md` — Define what test phase must produce
+- [x] 3.6 Write `pipeline/06-ship/output-spec.md` — Define what ship phase must produce
+- [x] 3.7 Cross-validate: each output-spec's outputs match next phase's expected inputs
+- [x] 3.8 **STEP 3 COMPLETE** — Update `AGENT_STATE.md`
 
 ---
 
@@ -229,8 +229,8 @@
 | Step | Description | Tasks | Complete | Status |
 |------|-------------|-------|----------|--------|
 | 1 | Scaffold | 14 | 14 | ✅ Complete |
-| 2 | CLAUDE.md | 12 | 0 | ⬜ Not Started |
-| 3 | Output Specs | 8 | 0 | ⬜ Not Started |
+| 2 | CLAUDE.md | 12 | 12 | ✅ Complete |
+| 3 | Output Specs | 8 | 8 | ✅ Complete |
 | 4 | Commands | 9 | 0 | ⬜ Not Started |
 | 5 | Agents | 10 | 0 | ⬜ Not Started |
 | 6 | Skills | 10 | 0 | ⬜ Not Started |
@@ -238,11 +238,10 @@
 | 8 | Templates | 7 | 0 | ⬜ Not Started |
 | 9 | Hooks | 7 | 0 | ⬜ Not Started |
 | 10 | E2E Testing | 16 | 0 | ⬜ Not Started |
-| **TOTAL** | | **112** | **33** | **29%** |
+| **TOTAL** | | **112** | **53** | **47%** |
 
 > **Counting convention:** The 112 total reflects **top-level tasks** only (e.g., task 1.5 counts as 1, even though it has 7 subtask checkboxes 1.5.1–1.5.7). Step 1 contains 65 additional subtask checkboxes, bringing the actual total checkbox count to **177**. For progress tracking, mark the **parent task** complete only after all its subtasks are checked. The progress percentage above is based on the 112 top-level tasks.
 
 ---
 
-*Last updated by: Session 8 (Step 1 Scaffold complete — all 14 tasks, 65 subtasks done)*
-*Last u
+*Last updated by: Session 10 (Step 3 Output Specs complete — all 8 tasks done)*
