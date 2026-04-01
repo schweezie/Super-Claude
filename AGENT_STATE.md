@@ -9,14 +9,14 @@
 ## Current Status
 
 ```
-CURRENT_STEP: 2
-CURRENT_TASK: 2.1 (Master CLAUDE.md — write phase detection routing logic)
-STEP_NAME: Master CLAUDE.md
+CURRENT_STEP: 4
+CURRENT_TASK: 4.1 (Slash Commands — write idea command)
+STEP_NAME: Slash Commands
 PHASE_STATUS: NOT_STARTED
-OVERALL_PROGRESS: 33/112
-LAST_COMPLETED_TASK: 1.14 (Step 1 COMPLETE — full scaffold created)
+OVERALL_PROGRESS: 53/112
+LAST_COMPLETED_TASK: 3.8 (Step 3 COMPLETE — all 6 output specs written and cross-validated)
 LAST_COMPACTION_TOKEN_COUNT: 0
-SESSION_COUNT: 8
+SESSION_COUNT: 10
 ```
 
 ---
@@ -24,9 +24,9 @@ SESSION_COUNT: 8
 ## What Was Just Completed
 
 ```
-LAST_ACTION: Session 8 — Created full scaffold (Step 1). All directories and placeholder files: .claude/commands/ (7), .claude/agents/ (8), .claude/skills/ (8), .claude/hooks/ (4), pipeline/ (17), templates/ (5), .omc/ (3 dirs), README.md, setup.sh, .gitignore, .claude/settings.json. Knowledge files already existed from Step 7. All 14 top-level tasks + 65 subtasks marked complete.
-LAST_FILE_CREATED: All scaffold files (see CHECKLIST.md Step 1 for full list)
-LAST_FILE_MODIFIED: CHECKLIST.md, AGENT_STATE.md
+LAST_ACTION: Session 10 — Wrote all 6 pipeline output-spec.md files (idea, plan, architect, build, test, ship). Each spec defines: required artifact path, required H2 sections, validation rules (PASS/FAIL criteria), required inputs, and outputs consumed by next phase. Cross-validated the full chain — all phase transitions align. Step 3 complete (8/8 tasks).
+LAST_FILE_CREATED: None (all 6 output-spec.md files were overwrites of placeholders)
+LAST_FILE_MODIFIED: pipeline/01-idea/output-spec.md, pipeline/02-plan/output-spec.md, pipeline/03-architect/output-spec.md, pipeline/04-build/output-spec.md, pipeline/05-test/output-spec.md, pipeline/06-ship/output-spec.md, CHECKLIST.md, AGENT_STATE.md
 TIMESTAMP: 2026-04-01
 ```
 
@@ -35,10 +35,10 @@ TIMESTAMP: 2026-04-01
 ## What To Do Next
 
 ```
-NEXT_ACTION: Begin Step 2 — Master CLAUDE.md. Start with task 2.1 (write phase detection routing logic).
-NEXT_FILE: CLAUDE.md (rewrite from project-build instructions to pipeline orchestration)
+NEXT_ACTION: Begin Step 4 — Slash Commands. Start with task 4.1 (write .claude/commands/idea.md).
+NEXT_FILE: .claude/commands/idea.md
 BLOCKERS: none
-NOTES: STEP 1 COMPLETE (all 14/14 tasks + 65 subtasks done). STEP 7 COMPLETE (19/19). Steps 2-6 and 8-10 not yet started. Step 2 is next per build order. Note: current CLAUDE.md contains project-build instructions — Step 2 will replace it with pipeline CLAUDE.md.
+NOTES: STEP 1 COMPLETE (14/14). STEP 2 COMPLETE (12/12). STEP 3 COMPLETE (8/8). STEP 7 COMPLETE (19/19). Steps 4-6 and 8-10 not yet started. Step 4 is next per build order.
 ```
 
 ---
@@ -102,7 +102,10 @@ When switching between major pipeline steps (e.g., finishing Step 3 and starting
 - CS fundamentals distilled: data-structures, algorithms, system-design, design-patterns (from coding-interview-university README)
 - STEP 7 COMPLETE — All 13 knowledge files validated (<2000 tokens each)
 - STEP 1 COMPLETE — Full scaffold created (all dirs, placeholders, .gitignore)
-- Note for Step 2: current CLAUDE.md is project-build instructions; Step 2 replaces it with pipeline routing CLAUDE.md
+- STEP 2 COMPLETE — CLAUDE.md rewritten as pipeline orchestration (324 lines, ~3500 tokens)
+- CLAUDE.md covers: routing, gates, state, delegation, context mgmt, artifacts, models, routing table, recovery
+- STEP 3 COMPLETE — All 6 output-spec.md files written with validation rules, cross-validated chain
+- Output specs define: required H2 sections, PASS/FAIL criteria, input/output contracts per phase
 ```
 
 ---
