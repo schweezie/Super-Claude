@@ -1,0 +1,13 @@
+# Runtime state — never commit
+.state/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Node (if your project uses it)
+node_modules/
