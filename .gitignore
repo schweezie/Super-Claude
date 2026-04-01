@@ -1,0 +1,11 @@
+# Runtime state (gitignored — regenerated per project)
+.omc/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
