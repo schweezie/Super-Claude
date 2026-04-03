@@ -6,7 +6,7 @@
 
 ## 1. Project Owner
 
-**Background in multi-agent orchestration, Python, Claude Code, RAG architectures, and prompt engineering. Treats AI tooling as infrastructure, not novelty.
+Background in multi-agent orchestration, Python, Claude Code, RAG architectures, and prompt engineering. Treats AI tooling as infrastructure, not novelty.
 
 ---
 

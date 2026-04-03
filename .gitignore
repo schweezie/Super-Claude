@@ -15,3 +15,33 @@ references/
 
 # Local settings (user-specific)
 .claude/settings.local.json
+
+# Development session prompts (internal, not part of shipped product)
+_prompts/
+
+# Hook test artifacts (contain local paths)
+.claude/hooks/test-report.txt
+
+# Development state files (internal tracking, not part of shipped product)
+AGENT_STATE.md
+CHECKLIST.md
+COMPACTION_PROTOCOL.md
+AUDIT_REPORT.md
+super_repo_tracker.jsx
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+__pycache__/
+.venv/
+venv/
+*.pyc
+
+# Build artifacts
+dist/
+build/
+.next/
