@@ -1,0 +1,17 @@
+# Runtime state (gitignored — regenerated per project)
+.omc/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Cloned reference repos (research material, not project code)
+references/
+
+# Local settings (user-specific)
+.claude/settings.local.json

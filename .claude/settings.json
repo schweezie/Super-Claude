@@ -1,0 +1,56 @@
+{
+  "permissions": {},
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PROJECT_DIR}/.claude/hooks/session-start.js",
+            "timeout": 5000,
+            "once": true,
+            "statusMessage": "Loading pipeline status..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PROJECT_DIR}/.claude/hooks/pre-tool-use.js",
+            "timeout": 3000,
+            "statusMessage": "Checking guard rails..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PROJECT_DIR}/.claude/hooks/post-tool-use.js",
+            "timeout": 3000,
+            "statusMessage": "Tracking progress..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PROJECT_DIR}/.claude/hooks/stop.js",
+            "timeout": 5000,
+            "statusMessage": "Checking completion..."
+          }
+        ]
+      }
+    ]
+  },
+  "mcpServers": {}
+}
